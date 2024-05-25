@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Good Luck</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    background: url('https://raw.githubusercontent.com/mobeenyousaf/image/main/panoramic-istanbul-city-twilight-turkey.jpg') no-repeat top left fixed;
+    background-size: cover;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    min-height: 100vh; /* Ensure the body takes up the entire viewport */
+  }
+
+  #proposal-container {
+    max-width: 90%; /* Adjusted to be responsive */
+    text-align: center; /* Center-align the content inside proposal-container */
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  h1 {
+    font-size: 2.5em;
+    font-weight: bold; /* Bold font */
+    text-transform: uppercase; /* Convert text to uppercase */
+    margin: 0;
+    padding: 20px;
+    color: #3f8abf; /* Blue color for the question */
+    font-style: italic;
+    text-align: center; /* Align the text to the center */
+  }
+
+  .option {
+    font-size: 1.2em;
+    padding: 15px 30px;
+    border: 2px solid #ff69b4; /* Pink border for the options */
+    border-radius: 25px;
+    cursor: pointer;
+    color: #ff69b4; /* Pink color for the options */
+    background-color: transparent;
+    transition: color 0.3s, background-color 0.3s, transform 0.3s;
+    font-style: italic;
+    margin: 10px auto; /* Center horizontally */
+    width: 150px;
+  }
+
+  .option:hover {
+    color: #fff; /* Change text color to white on hover */
+    background-color: #ff69b4; /* Change background color to pink on hover */
+    transform: scale(1.1);
+  }
+
+  /* Media Queries for Responsiveness */
+  @media (max-width: 600px) {
+    h1 {
+      font-size: 1.8em;
+      padding: 15px;
+    }
+    .option {
+      font-size: 1em;
+      padding: 10px 20px;
+      width: 100px;
+    }
+  }
+
+  @media (max-width: 400px) {
+    h1 {
+      font-size: 1.5em;
+      padding: 10px;
+    }
+    .option {
+      font-size: 0.9em;
+      padding: 8px 16px;
+      width: 90px;
+    }
+  }
+</style>
+</head>
+<body>
+<div id="proposal-container">
+  <h1><strong>WILL YOU MARRY ME?</strong></h1> <!-- Bold and uppercase text -->
+  <div class="option" id="yes1" onclick="showMessage()">Yes</div>
+  <div class="option" id="yes2" onclick="showMessage()">Yes</div>
+</div>
+<script>
+  function showMessage() {
+    alert("Please speak to your dad.");
+  }
+</script>
+</body>
+</html>
